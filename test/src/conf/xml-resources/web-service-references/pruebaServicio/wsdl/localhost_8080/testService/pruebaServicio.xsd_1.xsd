@@ -1,0 +1,477 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://ws.west/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws.west/">
+
+<xs:element name="backersWS" type="tns:backersWS" />
+
+<xs:element name="backersWSResponse" type="tns:backersWSResponse" />
+
+<xs:element name="crearUsuarioWS" type="tns:crearUsuarioWS" />
+
+<xs:element name="crearUsuarioWSResponse" type="tns:crearUsuarioWSResponse" />
+
+<xs:element name="existeCategoriaWS" type="tns:existeCategoriaWS" />
+
+<xs:element name="existeCategoriaWSResponse" type="tns:existeCategoriaWSResponse" />
+
+<xs:element name="existeSubcategoriaWS" type="tns:existeSubcategoriaWS" />
+
+<xs:element name="existeSubcategoriaWSResponse" type="tns:existeSubcategoriaWSResponse" />
+
+<xs:element name="getIniciativaWS" type="tns:getIniciativaWS" />
+
+<xs:element name="getIniciativaWSResponse" type="tns:getIniciativaWSResponse" />
+
+<xs:element name="getUsuario" type="tns:getUsuario" />
+
+<xs:element name="getUsuarioResponse" type="tns:getUsuarioResponse" />
+
+<xs:element name="lsCategoriaWS" type="tns:lsCategoriaWS" />
+
+<xs:element name="lsCategoriaWSResponse" type="tns:lsCategoriaWSResponse" />
+
+<xs:element name="lsComentarioWS" type="tns:lsComentarioWS" />
+
+<xs:element name="lsComentarioWSResponse" type="tns:lsComentarioWSResponse" />
+
+<xs:element name="lsDenunciaEnIniWS" type="tns:lsDenunciaEnIniWS" />
+
+<xs:element name="lsDenunciaEnIniWSResponse" type="tns:lsDenunciaEnIniWSResponse" />
+
+<xs:element name="lsIniciativaDenunciadaWS" type="tns:lsIniciativaDenunciadaWS" />
+
+<xs:element name="lsIniciativaDenunciadaWSResponse" type="tns:lsIniciativaDenunciadaWSResponse" />
+
+<xs:element name="lsIniciativaWS" type="tns:lsIniciativaWS" />
+
+<xs:element name="lsIniciativaWSResponse" type="tns:lsIniciativaWSResponse" />
+
+<xs:element name="lsPatrocinioWS" type="tns:lsPatrocinioWS" />
+
+<xs:element name="lsPatrocinioWSResponse" type="tns:lsPatrocinioWSResponse" />
+
+<xs:element name="lsRecaduacionSubcategoriaWS" type="tns:lsRecaduacionSubcategoriaWS" />
+
+<xs:element name="lsRecaduacionSubcategoriaWSResponse" type="tns:lsRecaduacionSubcategoriaWSResponse" />
+
+<xs:element name="lsRecompensaWS" type="tns:lsRecompensaWS" />
+
+<xs:element name="lsRecompensaWSResponse" type="tns:lsRecompensaWSResponse" />
+
+<xs:element name="lsSubcategoriaWS" type="tns:lsSubcategoriaWS" />
+
+<xs:element name="lsSubcategoriaWSResponse" type="tns:lsSubcategoriaWSResponse" />
+
+<xs:element name="lsTodasSubcategoriasWS" type="tns:lsTodasSubcategoriasWS" />
+
+<xs:element name="lsTodasSubcategoriasWSResponse" type="tns:lsTodasSubcategoriasWSResponse" />
+
+<xs:element name="lsUsuariosWS" type="tns:lsUsuariosWS" />
+
+<xs:element name="lsUsuariosWSResponse" type="tns:lsUsuariosWSResponse" />
+
+<xs:element name="modificarUsuarioWS" type="tns:modificarUsuarioWS" />
+
+<xs:element name="modificarUsuarioWSResponse" type="tns:modificarUsuarioWSResponse" />
+
+<xs:element name="queryWS" type="tns:queryWS" />
+
+<xs:element name="queryWSResponse" type="tns:queryWSResponse" />
+
+<xs:element name="recaudacionWS" type="tns:recaudacionWS" />
+
+<xs:element name="recaudacionWSResponse" type="tns:recaudacionWSResponse" />
+
+<xs:element name="recomComprada" type="tns:recomComprada" />
+
+<xs:element name="recomCompradaIni" type="tns:recomCompradaIni" />
+
+<xs:element name="recomCompradaIniResponse" type="tns:recomCompradaIniResponse" />
+
+<xs:element name="recomCompradaResponse" type="tns:recomCompradaResponse" />
+
+<xs:element name="reporteCategoriaWS" type="tns:reporteCategoriaWS" />
+
+<xs:element name="reporteCategoriaWSResponse" type="tns:reporteCategoriaWSResponse" />
+
+<xs:element name="topWS" type="tns:topWS" />
+
+<xs:element name="topWSResponse" type="tns:topWSResponse" />
+
+<xs:element name="validarPersonaWS" type="tns:validarPersonaWS" />
+
+<xs:element name="validarPersonaWSResponse" type="tns:validarPersonaWSResponse" />
+
+<xs:complexType name="queryWS">
+<xs:sequence>
+<xs:element name="query" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="queryWSResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="reporteCategoriaWS">
+<xs:sequence>
+<xs:element name="op" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="reporteCategoriaWSResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lsPatrocinioWS">
+<xs:sequence>
+<xs:element name="idusuOidrecomOtodo" type="xs:string" minOccurs="0" />
+<xs:element name="modo" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lsPatrocinioWSResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:patrocinio" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="patrocinio">
+<xs:sequence>
+<xs:element name="descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="idpatrocinio" type="xs:int" />
+<xs:element name="nombre" type="xs:string" minOccurs="0" />
+<xs:element name="nombreIni" type="xs:string" minOccurs="0" />
+<xs:element name="ruta" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="validarPersonaWS">
+<xs:sequence>
+<xs:element name="nick" type="xs:string" minOccurs="0" />
+<xs:element name="pass" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="validarPersonaWSResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:usuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="usuario">
+<xs:sequence>
+<xs:element name="contrasena" type="xs:string" minOccurs="0" />
+<xs:element name="cuentabancaria" type="xs:string" minOccurs="0" />
+<xs:element name="direccion" type="xs:string" minOccurs="0" />
+<xs:element name="idusuario" type="xs:int" />
+<xs:element name="nickname" type="xs:string" minOccurs="0" />
+<xs:element name="nombre" type="xs:string" minOccurs="0" />
+<xs:element name="telefono" type="xs:string" minOccurs="0" />
+<xs:element name="tipo" type="tns:tipoUsuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="topWS">
+<xs:sequence>
+<xs:element name="modo" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="topWSResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="existeCategoriaWS">
+<xs:sequence>
+<xs:element name="str" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="existeCategoriaWSResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearUsuarioWS">
+<xs:sequence>
+<xs:element name="usu" type="tns:usuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearUsuarioWSResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lsRecompensaWS">
+<xs:sequence>
+<xs:element name="idUsuOIni" type="xs:string" minOccurs="0" />
+<xs:element name="modo" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lsRecompensaWSResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:recompensa" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="recompensa">
+<xs:sequence>
+<xs:element name="cantidad" type="xs:int" />
+<xs:element name="descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="idrecompensa" type="xs:int" />
+<xs:element name="nombre" type="xs:string" minOccurs="0" />
+<xs:element name="nombreIni" type="xs:string" minOccurs="0" />
+<xs:element name="p_minimo" type="xs:double" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lsDenunciaEnIniWS">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="lsDenunciaEnIniWSResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:denunciaEnIni" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="denunciaEnIni">
+<xs:sequence>
+<xs:element name="descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="idcomentario" type="xs:int" />
+<xs:element name="nombre" type="xs:string" minOccurs="0" />
+<xs:element name="nombreIni" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getIniciativaWS">
+<xs:sequence>
+<xs:element name="idIniciativa" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getIniciativaWSResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:iniciativa" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="iniciativa">
+<xs:sequence>
+<xs:element name="estado" type="xs:int" />
+<xs:element name="idiniciativa" type="xs:int" />
+<xs:element name="metaeconomica" type="xs:double" minOccurs="0" />
+<xs:element name="metatiempo" type="xs:string" minOccurs="0" />
+<xs:element name="nombreIni" type="xs:string" minOccurs="0" />
+<xs:element name="subcategoria" type="tns:subcategoria" minOccurs="0" />
+<xs:element name="usuario" type="tns:usuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="subcategoria">
+<xs:sequence>
+<xs:element name="categoria" type="tns:categoria" minOccurs="0" />
+<xs:element name="idsubcategoria" type="xs:int" />
+<xs:element name="nombreSub" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="categoria">
+<xs:sequence>
+<xs:element name="idcategoria" type="xs:int" />
+<xs:element name="nombreCat" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="recaudacionWS">
+<xs:sequence>
+<xs:element name="idIniciativa" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="recaudacionWSResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="modificarUsuarioWS">
+<xs:sequence>
+<xs:element name="usu" type="tns:usuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="modificarUsuarioWSResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lsRecaduacionSubcategoriaWS">
+<xs:sequence>
+<xs:element name="op" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lsRecaduacionSubcategoriaWSResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lsSubcategoriaWS">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lsSubcategoriaWSResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:subcategoria" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lsUsuariosWS">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="lsUsuariosWSResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:usuario" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="recomComprada">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="recomCompradaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="recomCompradaIni">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="recomCompradaIniResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="existeSubcategoriaWS">
+<xs:sequence>
+<xs:element name="str" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="existeSubcategoriaWSResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lsComentarioWS">
+<xs:sequence>
+<xs:element name="idIniciativa" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lsComentarioWSResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:comentario" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="comentario">
+<xs:sequence>
+<xs:element name="descripcion" type="xs:string" minOccurs="0" />
+<xs:element name="idcomentario" type="xs:int" />
+<xs:element name="nombre" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lsIniciativaWS">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lsIniciativaWSResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:iniciativa" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUsuario">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUsuarioResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:usuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lsIniciativaDenunciadaWS">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="lsIniciativaDenunciadaWSResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:iniciativa" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lsTodasSubcategoriasWS">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="lsTodasSubcategoriasWSResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:subcategoria" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="backersWS">
+<xs:sequence>
+<xs:element name="idIniciativa" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="backersWSResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lsCategoriaWS">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="lsCategoriaWSResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:categoria" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="tipoUsuario">
+<xs:restriction base="xs:string">
+<xs:enumeration value="ADMINISTRADOR" />
+<xs:enumeration value="USUARIO" />
+<xs:enumeration value="DESCONOCIDO" />
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>
